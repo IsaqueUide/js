@@ -15,9 +15,10 @@
 <body>
     <p>Olá_Mundo!</p>
     <script>
-        var n1 = window.prompt('Digite um número, por favor: ');
-        var n2 = window.prompt('Digite outro número: ')
-        
+        var n1 = Number.parseInt(window.prompt('Digite o ano atual'));
+        var n2 = Number.parseInt(window.prompt('Digite o ano em que você nasceu'))
+        var s = n1 - n2
+        window.alert('sua idade é ' + s)
     </script>
 </body>
 </html>
