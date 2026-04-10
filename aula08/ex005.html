@@ -15,10 +15,11 @@
 </head>
 <body>
     <script>
+        var nome = window.prompt('Seu nome')
         var nasc = window.prompt('Data de nascimento')
         var atual = window.prompt('Ano atual')
         var idade = atual - nasc
-        document.write(idade)
+        idade>18? document.write(`${nome} tem ${idade} e está apto a tirar carteira`):document.write(`${nome} tem ${idade} e não está apto a tirar carteira`)
     </script>
 </body>
 </html>
