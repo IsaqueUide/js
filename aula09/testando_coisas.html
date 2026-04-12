@@ -14,9 +14,16 @@
     </style>
 </head>
 <body>
-    
+    <h1>Apto ou não para comprar bebida</h1>
+    <p>Resultado:</p>
+    <div id="resultado">Resultado aqui</div>
     <script>
-        
+        var atual = window.prompt('Que anos estamos?')
+        var nasc = window.prompt('Que ano você nasceu?')
+        var nome = window.prompt('Seu nome?')
+        var idade = atual - nasc
+        var corpo = window.document.getElementsByTagName('body')
+        idade>18? corpo.style.background = 'green':corpo.style.background = 'red'
     </script>
 </body>
 </html>
