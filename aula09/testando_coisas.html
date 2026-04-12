@@ -16,14 +16,16 @@
 <body>
     <h1>Apto ou não para comprar bebida</h1>
     <p>Resultado:</p>
-    <div id="resultado">Resultado aqui</div>
+    <div id="res">Resultado aqui</div>
     <script>
         var atual = window.prompt('Que anos estamos?')
         var nasc = window.prompt('Que ano você nasceu?')
         var nome = window.prompt('Seu nome?')
         var idade = atual - nasc
         var corpo = window.document.body
+        var d = window.document.getElementById('res')
         idade>18? corpo.style.background = 'green':corpo.style.background = 'red'
+        idade>18? res.innerText = `${nome} tem ${idade} e por isso está apto para beber!`:res.innerText = `${nome} tem ${idade} e por isso não está apto para beber!`
     </script>
 </body>
 </html>
