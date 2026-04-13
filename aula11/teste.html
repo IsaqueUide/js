@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto com condições</title>
+    <style>
+        input{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pode ou não tirar carteira de motorista</h1>
+    
+    Seu ano de nascimento: <input type="number" name="innas" id="innas">
+    <input type="button" value="verificar" onclick="nascimento()"> <br>
+    <div id="resnas"></div>
+    Ano atual: <input type="number" name="inatual" id="inatual">
+    <input type="button" value="verificar" onclick="lançar()">
+    <div id="resatual"></div>
+
+    <script>
+        var nas = document.querySelector('div#innas')
+        var atual = document.querySelector('div#inatual')
+        function nascimento(){
+            resnas.innerHTML =`Você tem ${nas} anos`
+        }
+    </script>
+</body>
+</html>
