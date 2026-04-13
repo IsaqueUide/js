@@ -13,18 +13,16 @@
 <body>
     <h1>Pode ou não tirar carteira de motorista</h1>
     
-    Seu ano de nascimento: <input type="number" name="innas" id="innas">
+    Seu ano de nascimento: <input type="number" name="txtnas" id="txtnas">
     <input type="button" value="verificar" onclick="nascimento()"> <br>
     <div id="resnas"></div>
-    Ano atual: <input type="number" name="inatual" id="inatual">
-    <input type="button" value="verificar" onclick="lançar()">
-    <div id="resatual"></div>
 
     <script>
-        var nas = document.querySelector('div#innas')
-        var atual = document.querySelector('div#inatual')
+        var txtn = window.document.getElementById('txtnas')
+        var nas = Number(txtn.value)
+        var resnas = window.document.getElementById('div#resnas')
         function nascimento(){
-            resnas.innerHTML =`Você tem ${nas} anos`
+            resnas.innerText = `Você nascem em ${nas}`
         }
     </script>
 </body>
