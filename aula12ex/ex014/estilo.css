@@ -19,6 +19,8 @@ section{
     width: 350px;
     height: 320px;
     border-radius: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 footer{
     font-style: italic;
