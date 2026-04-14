@@ -25,12 +25,19 @@
             resnas.innerHTML = `Você nasceu em ${nas}`
         }
         function verificar(){
+            var txtnas = document.querySelector('input#nascimento')
+            var nas = Number(txtnas.value)
             var txtatual = document.querySelector('input#agora')
             var atual = Number(txtatual.value)
             var idade = atual - nas
+            corpo = document.body
             resatual.innerHTML = `O ano atual é ${atual}`
             if(idade > 18){
-
+                final.innerHTML = `Sua idade é ${idade} e por isso você pode tirar carteira de motorista`
+                corpo.style.background ='green'
+            }else{
+                final.innerHTML = `Sua idade é ${idade} e por isso você não pode tirar carteira de motorista. Espere até os 18 anos`
+                corpo.style.background = 'red'
             }
         }
     </Script>
