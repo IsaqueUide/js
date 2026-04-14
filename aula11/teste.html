@@ -15,14 +15,23 @@
     Ano de nascimento: <input type="number" name="nascimento" id="nascimento"> <input type="button" value="adicionar" onclick="adicionar()">
     <div id="resnas"></div>
     
-    Ano atual: <input type="number" name="agora" id="agora"> <input type="button" value="verificar">
+    Ano atual: <input type="number" name="agora" id="agora"> <input type="button" value="verificar" onclick="verificar()">
     <div id="resatual"></div>
+    <div id="final"></div>
     <Script>
         function adicionar(){
             var txtnas = document.querySelector('input#nascimento')
             var nas = Number(txtnas.value)
-            var resnas = document.getElementById('resnas')
             resnas.innerHTML = `Você nasceu em ${nas}`
+        }
+        function verificar(){
+            var txtatual = document.querySelector('input#agora')
+            var atual = Number(txtatual.value)
+            var idade = atual - nas
+            resatual.innerHTML = `O ano atual é ${atual}`
+            if(idade > 18){
+
+            }
         }
     </Script>
 </body>
