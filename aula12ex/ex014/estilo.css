@@ -6,7 +6,6 @@ body{
     color: white;
     text-align: center;
 }
-
 section{
     background-color: white;
     border-radius: 10px;
@@ -15,6 +14,11 @@ section{
     margin: auto;
     color: black;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.358);
+}
+#imagem{
+    width: 350px;
+    height: 320px;
+    border-radius: 50%;
 }
 footer{
     font-style: italic;
