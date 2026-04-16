@@ -15,12 +15,16 @@ function verificar(){
             genero = 'Homem'
             if (idade >=0 && idade < 12){
                 //criança
+                img.setAttribute('src', 'criançaM.jpg')
             }else if (idade >= 10 && idade < 21){
                 //jovem
+                img.setAttribute('src', 'jovemM.jpg')
             }else if(idade < 50){
                 //adulto
-            }else(idade){
+                img.setAttribute('src', 'adultoM.jpg')
+            }else{
                 //idoso
+                img.setAttribute('src', 'idosoM.jpg')
             }
         }else if(fsex[1].checked){
             genero = 'Mulher'
@@ -30,7 +34,7 @@ function verificar(){
                 //jovem
             }else if(idade < 50){
                 //adulto
-            }else(idade){
+            }else{
                 //idoso
             }
         }
