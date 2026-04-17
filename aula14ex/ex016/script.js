@@ -1,10 +1,13 @@
-function onclick{
-    let txtini = document.getElementById('iini')
-    let ini = Number(iini.value)
-    let txtfim = document.getElementById('ifim')
-    let fim = Number(ifim.value)
-    let txtpasso = document.getElementById('ipas')
-    let txtpasso = Number(ipas.value)
-    let res = document.getElementById('res')
-    res.innerHTML = `${ini}, ${fim}, ${passo}`
+function contar(){
+    var txtini = document.getElementById('iini')
+    var ini = Number(txtini.value)
+    var txtfim = document.getElementById('ifim')
+    var fim = Number(txtfim.value)
+    var txtpasso = document.getElementById('ipas')
+    var pas = Number(txtpasso.value)
+    var res = document.getElementById('res')
+    while(ini <= fim){
+        ini = +passo
+        res.innerHTML = `${ini}`
+    }
 }
