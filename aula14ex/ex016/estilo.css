@@ -4,9 +4,10 @@ body{
     background: rgb(107, 165, 241);
     font: normal 15pt arial;
     color: white;
+}
+h1{
     text-align: center;
 }
-
 section{
     background-color: white;
     border-radius: 10px;
@@ -16,6 +17,10 @@ section{
     color: black;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.358);
 }
+input{
+    margin: 10px 0px;
+}
 footer{
+    text-align: center;
     font-style: italic;
 }
