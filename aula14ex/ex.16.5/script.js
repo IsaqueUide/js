@@ -15,6 +15,15 @@ function contar(){
             window.alert('Passo inválido, contando como 1')
             p = 1
         }
-        if
+        if(i<f){
+            for(let c = i; c <= f; c+=p){
+                res.innerHTML += `${c} ▶️`
+            }
+        }else{
+            for(let c = i; c>= f; c-=p){
+                res.innerHTML += `${c} ▶️`
+            }
+        }
+        res.innerHTML += '🚩'
         }
     }
