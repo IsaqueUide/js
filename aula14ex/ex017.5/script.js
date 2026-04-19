@@ -8,7 +8,7 @@ function contar(){
         let n = Number(num.value)
         let c = 1
         tab.innerHTML = ''
-        while(c<=0){
+        while(c<=10){
             let res = document.createElement('option')
             res.text = `${n} x ${c} = ${n*c}`
             tab.appendChild(res)
