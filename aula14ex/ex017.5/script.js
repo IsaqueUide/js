@@ -10,8 +10,9 @@ function contar(){
         tab.innerHTML = ''
         while(c<=0){
             let res = document.createElement('option')
-            res.text = `${n}`
+            res.text = `${n} x ${c} = ${n*c}`
             tab.appendChild(res)
+            c++
         }
     }
 }
