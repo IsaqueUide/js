@@ -1,16 +1,17 @@
 function contar(){
     let num = document.getElementById('txtnum')
-    let n1 = Number(num.value)
-    let res = document.getElementById('res')
-    let c = 0
-    let n2 = n1*c
+    let tab = document.getElementById('seltab')
 
-    if(n1 <= 0){
-        window.alert('preencha com um número acima de 1')
+    if(num.value.length == 0){
+        window.alert('Por favor, preencha a área acima')
     }else{
-        while(c <= 10){
-            res.innerHTML - `${n1} x ${c} = ${n2}`
-            c++
+        let n = Number(num.value)
+        let c = 1
+        tab.innerHTML = ''
+        while(c<=0){
+            let res = document.createElement('option')
+            res.text = `${n}`
+            tab.appendChild(res)
         }
     }
 }
