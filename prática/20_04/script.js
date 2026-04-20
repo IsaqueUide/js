@@ -25,6 +25,13 @@ function verificar(){
             
         }else if (radgen[1].checked){
             genero = "Mulher"
+            if (idade < 18){
+                img.setAttribute('src', 'bebeF.jpg')
+                direito ='não pode dirigir.'
+            }else if(idade >= 18){
+                img.setAttribute('src', 'bebeF.jpg')
+                direito = "pode dirigir"
+            }
 
         }
         res.innerHTML = `Você é ${genero} e tem ${idade} anos, por isso ${direito}`
