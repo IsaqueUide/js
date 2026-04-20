@@ -6,7 +6,7 @@ function verificar(){
     if (nasc.value.length == 0 || nasc.value > ano){
         window.alert('[ERRO] Digite os dados corretamente!')
     } else{
-        let radgen = document.getElementById('radgen')
+        let radgen = document.getElementsByName('radgen')
         let idade = ano - Number(nasc.value)
         let genero = ''
         let direito = ''
@@ -18,9 +18,15 @@ function verificar(){
                 //Bebe Não pode dirigir
                 img.setAttribute('src', 'bebeM.jpg')
                 direito = "não pode dirigir."
-            }else if(idade >= 18){
+            }else if (idade >= 18 && idade <= 33 ){
                 img.setAttribute('src', 'jovemM.jpg')
                 direito = "pode dirigir"
+            }else if(idade >= 34 && idade <= 55){
+                img.setAttribute('src', 'adultoM.jpg')
+                direto = "pode dirigir"
+            }else{
+                img.setAttribute('src', 'idosoM.jpg')
+                direito = 'pode dirigir'
             }
             
         }else if (radgen[1].checked){
@@ -28,13 +34,19 @@ function verificar(){
             if (idade < 18){
                 img.setAttribute('src', 'bebeF.jpg')
                 direito ='não pode dirigir.'
-            }else if(idade >= 18){
-                img.setAttribute('src', 'bebeF.jpg')
+            }else if(idade >= 18 && idade <= 33 ){
+                img.setAttribute('src', 'jovemF.jpg')
                 direito = "pode dirigir"
+            }else if(idade >= 34 && idade <= 55){
+                img.setAttribute('src', 'adultaF.jpg')
+                direto = "pode dirigir"
+            }else{
+                img.setAttribute('src', 'idosaF.jpg')
+                direito = 'pode dirigir'
             }
 
         }
-        res.innerHTML = `Você é ${genero} e tem ${idade} anos, por isso ${direito}`
+        res.innerHTML = `Você é ${genero} e tem ${idade} anos e por isso ${direito}`
         res.appendChild(img)
     }
 }
