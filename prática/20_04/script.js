@@ -2,7 +2,11 @@ function verificar(){
     let data = new Date()
     let ano = data.getFullYear()
     let nasc = document.getElementById('txtnas')
-    let nas = Number(nasc.value)
     let res = document.getElementById('res')
-    res.innerHTML = `${ano} ${nas}`
+    if (nas.value.length == 0 || nas.value > ano){
+        window.alert('[ERRO] Digite os dados corretamente!')
+    } else{
+        let radgen = document.getElementById('radsex')
+        let idade = ano - Number(nasc.value)
+    }
 }
