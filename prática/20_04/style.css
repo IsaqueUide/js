@@ -2,6 +2,12 @@
 
 body{
     background-color: rgb(86, 86, 156);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+h1, footer{
+    color: white;
 }
 section{
     background-color: white;
@@ -9,4 +15,5 @@ section{
     width: 500px;
     border-radius: 16px;
     padding: 20px;
+    font-size: 1.2em;
 }
