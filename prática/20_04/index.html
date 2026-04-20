@@ -11,13 +11,27 @@
         <h1>Posso dirigir?</h1>
     </header>
     <section>
-        <p>
-            <label for="txtnas">Digite seu ano de nascimento</label>
-                <input type="number" name="nascimento" id="txtnas">
-        </p>
-        <p>
-            <input type="button" value="Verificar">
-        </p>
+        <div>
+            <p>
+                <label for="txtnas">Digite seu ano de nascimento</label>
+                    <input type="number" name="nascimento" id="txtnas">
+            </p>
+            <p>
+                Selecione seu gênero
+                <input type="radio" name="masculino" id="txtmasc">
+                    <label for="txtmasc">Masculino</label>
+                <input type="radio" name="feminino" id="txtfem">
+                    <label for="txtfem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar">
+            </p>
+        </div>
+        <div id="res">
+            <p>
+                Preencha os dados acima para ver se você pode dirigir
+            </p>
+        </div>
     </section>
     <footer>
         <p>Feito por Isaque</p>
