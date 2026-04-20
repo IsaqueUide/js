@@ -13,7 +13,16 @@ function verificar(){
         img.setAttribute('src', 'id')
         if(radgen[0].checked){
             genero = "Homem"
+            if (idade < 18){
+                //Bebe Não pode dirigir
+                
+            }else if{
+
+            }
             
+        }else if (radgen[1].checked){
+            genero = "Mulher"
+
         }
     }
 }
