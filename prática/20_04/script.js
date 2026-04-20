@@ -3,6 +3,7 @@ function verificar(){
     let ano = data.getFullYear()
     let nasc = document.getElementById('txtnas')
     let res = document.getElementById('res')
+    let corpo = document.body
     if (nasc.value.length == 0 || nasc.value > ano){
         window.alert('[ERRO] Digite os dados corretamente!')
     } else{
@@ -18,15 +19,19 @@ function verificar(){
                 //Bebe Não pode dirigir
                 img.setAttribute('src', 'bebeM.jpg')
                 direito = "não pode dirigir."
+                corpo.style.background = 'red'
             }else if (idade >= 18 && idade <= 33 ){
                 img.setAttribute('src', 'jovemM.jpg')
                 direito = "pode dirigir"
+                body.style.background = 'green'
             }else if(idade >= 34 && idade <= 55){
                 img.setAttribute('src', 'adultoM.jpg')
                 direto = "pode dirigir"
+                body.style.background = 'green'
             }else{
                 img.setAttribute('src', 'idosoM.jpg')
                 direito = 'pode dirigir'
+                body.style.background = 'green'
             }
             
         }else if (radgen[1].checked){
@@ -34,15 +39,19 @@ function verificar(){
             if (idade < 18){
                 img.setAttribute('src', 'bebeF.jpg')
                 direito ='não pode dirigir.'
+                body.style.background = 'red'
             }else if(idade >= 18 && idade <= 33 ){
                 img.setAttribute('src', 'jovemF.jpg')
                 direito = "pode dirigir"
+                body.style.background = 'green'
             }else if(idade >= 34 && idade <= 55){
                 img.setAttribute('src', 'adultaF.jpg')
                 direto = "pode dirigir"
+                body.style.background = 'green'
             }else{
                 img.setAttribute('src', 'idosaF.jpg')
                 direito = 'pode dirigir'
+                body.style.background = 'green'
             }
 
         }
