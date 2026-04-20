@@ -8,5 +8,12 @@ function verificar(){
     } else{
         let radgen = document.getElementById('radsex')
         let idade = ano - Number(nasc.value)
+        genero = ''
+        let img = document.createElement('img')
+        img.setAttribute('src', 'id')
+        if(radgen[0].checked){
+            genero = "Homem"
+            
+        }
     }
 }
