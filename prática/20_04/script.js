@@ -22,16 +22,16 @@ function verificar(){
                 corpo.style.background = 'red'
             }else if (idade >= 18 && idade <= 33 ){
                 img.setAttribute('src', 'jovemM.jpg')
-                direito = "pode dirigir"
-                body.style.background = 'green'
+                direito = "pode dirigir."
+                corpo.style.background = 'green'
             }else if(idade >= 34 && idade <= 55){
                 img.setAttribute('src', 'adultoM.jpg')
-                direto = "pode dirigir"
-                body.style.background = 'green'
+                direito = "pode dirigir."
+                corpo.style.background = 'green'
             }else{
                 img.setAttribute('src', 'idosoM.jpg')
-                direito = 'pode dirigir'
-                body.style.background = 'green'
+                direito = 'pode dirigir.'
+                corpo.style.background = 'green'
             }
             
         }else if (radgen[1].checked){
@@ -39,23 +39,23 @@ function verificar(){
             if (idade < 18){
                 img.setAttribute('src', 'bebeF.jpg')
                 direito ='não pode dirigir.'
-                body.style.background = 'red'
+                corpo.style.background = 'red'
             }else if(idade >= 18 && idade <= 33 ){
                 img.setAttribute('src', 'jovemF.jpg')
-                direito = "pode dirigir"
-                body.style.background = 'green'
+                direito = "pode dirigir."
+                corpo.style.background = 'green'
             }else if(idade >= 34 && idade <= 55){
                 img.setAttribute('src', 'adultaF.jpg')
-                direto = "pode dirigir"
-                body.style.background = 'green'
+                direito = "pode dirigir."
+                corpo.style.background = 'green'
             }else{
                 img.setAttribute('src', 'idosaF.jpg')
-                direito = 'pode dirigir'
-                body.style.background = 'green'
+                direito = 'pode dirigir.'
+                corpo.style.background = 'green'
             }
 
         }
-        res.innerHTML = `Você é ${genero} e tem ${idade} anos e por isso ${direito}`
+        res.innerHTML = `Você é ${genero}. Por ter ${idade} anos, você ${direito}`
         res.appendChild(img)
     }
 }
