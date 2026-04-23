@@ -1,6 +1,6 @@
-let num = [0, 1, 2]
-num[3] = 6
-num.push(7)
+let num = [4, 1, 8]
+num[3] = 5
+num.push(2)
 num.length
 num.sort()
 console.log(`Nosso vetor é ${num} e tem ${num.length} elementos`)
