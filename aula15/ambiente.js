@@ -1,3 +1,4 @@
-let num = [0, 1, 2, 3, 4, 5, 6]
+let num = [0, 1, 2]
+num[3] = 6
 
 console.log(`Nosso vetor é ${num}`)
