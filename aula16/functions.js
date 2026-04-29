@@ -5,5 +5,5 @@ function parimp(n){
 		return 'ímpar'
 	}
 }
-let res = parimp(11)
+let res = parimp(4)
 console.log(`${res}`)
